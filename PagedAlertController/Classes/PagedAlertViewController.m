@@ -215,11 +215,7 @@
     
     [alertView.innerContentView addSubview:contentView];
     [[UIApplication sharedApplication].keyWindow bringSubviewToFront:contentView];
-//    [contentView setFrame:contentView.superview.bounds];
-//    [alertView.innerContentView bringSubviewToFront:contentView];
-//    [contentView setFrame:contentView.superview.frame];
-//    [contentView didMoveToSuperview];
-    
+
     
     self.currentPageContentView = contentView;
 
