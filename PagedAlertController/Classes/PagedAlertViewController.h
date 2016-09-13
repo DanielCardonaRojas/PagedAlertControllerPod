@@ -1,43 +1,39 @@
-# PagedAlertController
+//
+//  ViewController.h
+//  PagedAlertController
+//
+//  Created by Daniel Cardona Rojas on 8/22/16.
+//  Copyright © 2016 Daniel Cardona Rojas. All rights reserved.
+//
+/*
+ 
+ 
+ */
 
-[![CI Status](http://img.shields.io/travis/Daniel Cardona Rojas/PagedAlertController.svg?style=flat)](https://travis-ci.org/Daniel Cardona Rojas/PagedAlertController)
-[![Version](https://img.shields.io/cocoapods/v/PagedAlertController.svg?style=flat)](http://cocoapods.org/pods/PagedAlertController)
-[![License](https://img.shields.io/cocoapods/l/PagedAlertController.svg?style=flat)](http://cocoapods.org/pods/PagedAlertController)
-[![Platform](https://img.shields.io/cocoapods/p/PagedAlertController.svg?style=flat)](http://cocoapods.org/pods/PagedAlertController)
+#import <UIKit/UIKit.h>
 
-## Example
+/*
+ This Viewcontroller provides a Alert like mixed with a uipage controller.With a transparent
+ background. All View have a next and previous button a title and an area for a custom view to be 
+ displayed. 
+ 
+ Bullets can be displayed or not.
+ 
+ 
+ TODO:
+ 
+ choose between viewControllerForPage or viewForAlertPage methods
+ the advatnage of implementing the later is that only views need to be passed.
+ 
+ Or think of a way to keep both to be more generic.
+ 
+ - Dismiss controller on tap outside the alert area, call delegate method when this happens
+ 
+ - Toggle swip, figure out how to disable
+*/
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+//TODO: Subclass UIViewController and change respective protocol method parameters
 
-## Requirements
-
-## Installation
-
-PagedAlertController is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "PagedAlertController"
-```
-
-## Usage 
-
-PagedAlertController presents a user defined view (300x200 by default) in a alert style modal, adding pages and bullets.
-
-By itself in only adds navigating functionality, validation and content design is user defined.
-
-
-- Import files in Reusable components of xcode file group
-- Create two view controller in story board assign to one them the PagedAlertController class.
-- In the remaining view controller import PagedAlertController.h and implement protocols PagedAlertDelegate and PagedAlertDataSource.
-- Make shure from the presenting viewcontroller or segue that the presentation style of the PagedAlertController is 'over current context'.
-
-
-Detailed Description of Protocols
-====
-
-
-``` objective-c
 /* -------------------------- DELEGATE ------------------------- */
 @protocol PagedAlertDelegate <NSObject>
 
@@ -107,25 +103,9 @@ Detailed Description of Protocols
 @property (weak,nonatomic) id<PagedAlertDataSource> dataSource;
 
 @end
-```
-
-# TODO
-
-- Create a cocoapod once polished
-- Make UITapGestureRecognizer dismiss the PagedAlertController when tapped on outer area.
-- Remove UIPageViewController bounce
-- Define constraints on PageAlertView xib
-- Generalize content view data source method so a PagedAlertController of any size may be constructed.
-- Add other visual options like chosing a blurred background etc.
-- FIX: BUtton user interaction area gets reduced when an icon is added to the button.
-- FIX: Views added throught storyboard dont get centered in container (innerContentView e.g page 6) but views added programatically do. 
 
 
-`
-## Author
 
-Daniel Cardona Rojas, d.cardona.rojas@gmail.com
 
-## License
 
-PagedAlertController is available under the MIT license. See the LICENSE file for more info.
+

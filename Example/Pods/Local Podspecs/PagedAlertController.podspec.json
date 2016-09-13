@@ -1,9 +1,9 @@
 {
   "name": "PagedAlertController",
   "version": "0.1.0",
-  "summary": "A short description of PagedAlertController.",
+  "summary": "An alert like paged controller",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/PagedAlertController",
+  "homepage": "https://github.com/DanielCardonaRojas/PagedAlertController",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Daniel Cardona Rojas": "d.cardona.rojas@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/PagedAlertController.git",
+    "git": "https://github.com/PagedAlertControllerPod/PagedAlertControllerPod.git",
     "tag": "0.1.0"
   },
   "platforms": {

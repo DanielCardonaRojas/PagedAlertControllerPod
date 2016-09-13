@@ -13,7 +13,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* DCRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DCRAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* DCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DCRViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -22,6 +21,18 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		8520E8C29F61BE81F4E3B260 /* Pods_PagedAlertController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE8C7EB24672B41052E0679 /* Pods_PagedAlertController_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C46106FA1D889F8C007845C4 /* DifusionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46106F91D889F8C007845C4 /* DifusionViewController.m */; };
+		C46106FE1D88A01F007845C4 /* SocialPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46106FC1D88A01F007845C4 /* SocialPageView.m */; };
+		C46106FF1D88A01F007845C4 /* SocialPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46106FD1D88A01F007845C4 /* SocialPageView.xib */; };
+		C46107071D88A2BB007845C4 /* close_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C46107011D88A2BB007845C4 /* close_button.png */; };
+		C46107081D88A2BB007845C4 /* dislike.png in Resources */ = {isa = PBXBuildFile; fileRef = C46107021D88A2BB007845C4 /* dislike.png */; };
+		C46107091D88A2BB007845C4 /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = C46107031D88A2BB007845C4 /* Facebook.png */; };
+		C461070A1D88A2BB007845C4 /* filapp_beta_58.png in Resources */ = {isa = PBXBuildFile; fileRef = C46107041D88A2BB007845C4 /* filapp_beta_58.png */; };
+		C461070B1D88A2BB007845C4 /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C46107051D88A2BB007845C4 /* left-arrow.png */; };
+		C461070C1D88A2BB007845C4 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = C46107061D88A2BB007845C4 /* like.png */; };
+		C46107101D88A3ED007845C4 /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C461070D1D88A3ED007845C4 /* right-arrow.png */; };
+		C46107111D88A3ED007845C4 /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = C461070E1D88A3ED007845C4 /* Twitter.png */; };
+		C46107121D88A3ED007845C4 /* WhatsApp.png in Resources */ = {isa = PBXBuildFile; fileRef = C461070F1D88A3ED007845C4 /* WhatsApp.png */; };
 		D202340CE4D3E9C362B69F28 /* Pods_PagedAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF26DD44A2CA22D5F7190C4 /* Pods_PagedAlertController_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +61,6 @@
 		6003F59B195388D20070C39A /* PagedAlertController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PagedAlertController-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* DCRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* DCRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* DCRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCRViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* DCRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* PagedAlertController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagedAlertController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -62,6 +71,20 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8BE8C7EB24672B41052E0679 /* Pods_PagedAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagedAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E645EA77DF777B89A2149F7 /* Pods-PagedAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagedAlertController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PagedAlertController_Example/Pods-PagedAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C46106F81D889F8C007845C4 /* DifusionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifusionViewController.h; sourceTree = "<group>"; };
+		C46106F91D889F8C007845C4 /* DifusionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifusionViewController.m; sourceTree = "<group>"; };
+		C46106FB1D88A01F007845C4 /* SocialPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialPageView.h; sourceTree = "<group>"; };
+		C46106FC1D88A01F007845C4 /* SocialPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialPageView.m; sourceTree = "<group>"; };
+		C46106FD1D88A01F007845C4 /* SocialPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialPageView.xib; sourceTree = "<group>"; };
+		C46107011D88A2BB007845C4 /* close_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_button.png; sourceTree = "<group>"; };
+		C46107021D88A2BB007845C4 /* dislike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dislike.png; sourceTree = "<group>"; };
+		C46107031D88A2BB007845C4 /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
+		C46107041D88A2BB007845C4 /* filapp_beta_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filapp_beta_58.png; sourceTree = "<group>"; };
+		C46107051D88A2BB007845C4 /* left-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow.png"; sourceTree = "<group>"; };
+		C46107061D88A2BB007845C4 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		C461070D1D88A3ED007845C4 /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
+		C461070E1D88A3ED007845C4 /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
+		C461070F1D88A3ED007845C4 /* WhatsApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhatsApp.png; sourceTree = "<group>"; };
 		D0B338F4DD2EAB51C60C2442 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D7DAFED302AD15935EBD1176 /* Pods-PagedAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagedAlertController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PagedAlertController_Tests/Pods-PagedAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA8D06BEBD4679B9564E1C54 /* PagedAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PagedAlertController.podspec; path = ../PagedAlertController.podspec; sourceTree = "<group>"; };
@@ -133,8 +156,20 @@
 				6003F59C195388D20070C39A /* DCRAppDelegate.h */,
 				6003F59D195388D20070C39A /* DCRAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* DCRViewController.h */,
-				6003F5A6195388D20070C39A /* DCRViewController.m */,
+				C46106FB1D88A01F007845C4 /* SocialPageView.h */,
+				C46106FC1D88A01F007845C4 /* SocialPageView.m */,
+				C46106FD1D88A01F007845C4 /* SocialPageView.xib */,
+				C46106F81D889F8C007845C4 /* DifusionViewController.h */,
+				C46106F91D889F8C007845C4 /* DifusionViewController.m */,
+				C46107011D88A2BB007845C4 /* close_button.png */,
+				C46107021D88A2BB007845C4 /* dislike.png */,
+				C46107031D88A2BB007845C4 /* Facebook.png */,
+				C46107041D88A2BB007845C4 /* filapp_beta_58.png */,
+				C46107051D88A2BB007845C4 /* left-arrow.png */,
+				C46107061D88A2BB007845C4 /* like.png */,
+				C461070D1D88A3ED007845C4 /* right-arrow.png */,
+				C461070E1D88A3ED007845C4 /* Twitter.png */,
+				C461070F1D88A3ED007845C4 /* WhatsApp.png */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -276,8 +311,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C461070A1D88A2BB007845C4 /* filapp_beta_58.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				C46107101D88A3ED007845C4 /* right-arrow.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				C46107091D88A2BB007845C4 /* Facebook.png in Resources */,
+				C46107071D88A2BB007845C4 /* close_button.png in Resources */,
+				C461070B1D88A2BB007845C4 /* left-arrow.png in Resources */,
+				C461070C1D88A2BB007845C4 /* like.png in Resources */,
+				C46107081D88A2BB007845C4 /* dislike.png in Resources */,
+				C46107111D88A3ED007845C4 /* Twitter.png in Resources */,
+				C46107121D88A3ED007845C4 /* WhatsApp.png in Resources */,
+				C46106FF1D88A01F007845C4 /* SocialPageView.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,8 +436,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* DCRAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* DCRViewController.m in Sources */,
+				C46106FE1D88A01F007845C4 /* SocialPageView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C46106FA1D889F8C007845C4 /* DifusionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
