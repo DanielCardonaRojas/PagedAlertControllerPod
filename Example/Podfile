@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PagedAlertController_Example' do
+  pod 'PagedAlertController', :path => '../'
+
+  target 'PagedAlertController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
