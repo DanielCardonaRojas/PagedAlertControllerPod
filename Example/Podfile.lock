@@ -1,0 +1,16 @@
+PODS:
+  - PagedAlertController (0.1.0)
+
+DEPENDENCIES:
+  - PagedAlertController (from `../`)
+
+EXTERNAL SOURCES:
+  PagedAlertController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PagedAlertController: a9067956c3c79a33a43464c16e9efe073bebe197
+
+PODFILE CHECKSUM: 34660ee75757e110af3dc6c72e074235ba53bcf0
+
+COCOAPODS: 1.0.1

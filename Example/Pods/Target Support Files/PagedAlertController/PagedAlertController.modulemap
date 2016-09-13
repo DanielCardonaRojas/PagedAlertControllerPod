@@ -1,0 +1,6 @@
+framework module PagedAlertController {
+  umbrella header "PagedAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}

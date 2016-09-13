@@ -1,0 +1,6 @@
+framework module Pods_PagedAlertController_Tests {
+  umbrella header "Pods-PagedAlertController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C7A95095B4483F0BA7761825DACA4B3 /* Pods-PagedAlertController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A96C36BA811205A6B21536C95C3A9E0 /* Pods-PagedAlertController_Tests-dummy.m */; };
+		4C00C688A2D8056F4D428019C9264676 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5E845284D9685FEB2B26726752797C90 /* Pods-PagedAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42740287D057F400E67947A9F6EB5489 /* Pods-PagedAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		607FF2744ECB1E4E4D1BB2FE682755F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		94A6E37A1E8CE9A03702964FB3672D3E /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B16C9DD6B0F22D8B83F9538EEDE8429F /* ReplaceMe.m */; };
+		A66CCC23E09E4ABD5AE7BC977BC679CF /* PagedAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7015915A2A8A746827CA980B3EEE0 /* PagedAlertController-dummy.m */; };
+		C46AFC8D99453684DBC57B7C8B162B79 /* PagedAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 896D228DFD9C5C8554875DBEEF2DB60A /* PagedAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C820CDE099E22AFFF5E0A8ED0CC51E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C9AD0713178FB2841A08400C1C5BA0D9 /* Pods-PagedAlertController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9871EBC2407EF074A4A521E5C6897BBE /* Pods-PagedAlertController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6833083665E6A892F3AD6ADC04DA816 /* Pods-PagedAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F37944324DECBF93F64AF830ED22DB03 /* Pods-PagedAlertController_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90665261828231B604327D073DD80DA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A790BEA41BF313B3623D78A71A9104CE;
+			remoteInfo = PagedAlertController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A96C36BA811205A6B21536C95C3A9E0 /* Pods-PagedAlertController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PagedAlertController_Tests-dummy.m"; sourceTree = "<group>"; };
+		1C16610173BA77872D220FA5B5137A47 /* Pods-PagedAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PagedAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2326D44BCF7521E62FD85146EDDADC6A /* PagedAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagedAlertController-prefix.pch"; sourceTree = "<group>"; };
+		38E16558EDD1B8FCC0560C0DA6D67A07 /* PagedAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagedAlertController.xcconfig; sourceTree = "<group>"; };
+		39EFDF8D7EB7B39120B97FA77E705B93 /* Pods-PagedAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PagedAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		42740287D057F400E67947A9F6EB5489 /* Pods-PagedAlertController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PagedAlertController_Example-umbrella.h"; sourceTree = "<group>"; };
+		563C2F6DF8F577F1677C0D0F93DACD54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60BFCD8766096CF4DE2ED93B5CD89600 /* Pods-PagedAlertController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PagedAlertController_Tests.modulemap"; sourceTree = "<group>"; };
+		6386EB2B608C19FAB839B960FE15C819 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D80ABDB2958F5C48894B9B53D51C4D /* Pods-PagedAlertController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PagedAlertController_Tests-resources.sh"; sourceTree = "<group>"; };
+		666E2A742BA810E56EF25BBA76240CDA /* Pods-PagedAlertController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PagedAlertController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		726B93A30372951BA85D396C085A2BAC /* Pods-PagedAlertController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PagedAlertController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		884B4F068D34F5635D7E6692ADFE61E1 /* Pods_PagedAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagedAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		896D228DFD9C5C8554875DBEEF2DB60A /* PagedAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagedAlertController-umbrella.h"; sourceTree = "<group>"; };
+		8AF7015915A2A8A746827CA980B3EEE0 /* PagedAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagedAlertController-dummy.m"; sourceTree = "<group>"; };
+		934B9F1769148438B2B4C49C0BD07C0F /* Pods-PagedAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PagedAlertController_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9775B86227C08CFACDED8616281BFA91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97D4220D8C5464A764DD12F0B4D9CFB6 /* Pods-PagedAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PagedAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9871EBC2407EF074A4A521E5C6897BBE /* Pods-PagedAlertController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PagedAlertController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B16C9DD6B0F22D8B83F9538EEDE8429F /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		B3105D68EE22FE430830B9B171D1F8B6 /* Pods-PagedAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PagedAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAE50D0308240602F9FA343DB1FDE00D /* Pods-PagedAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PagedAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C14F39055378E4BF1F6DAAF24CC789D9 /* PagedAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PagedAlertController.modulemap; sourceTree = "<group>"; };
+		C37BEBB0296D7A5E1C252A18836753B6 /* Pods-PagedAlertController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PagedAlertController_Example-resources.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E9E4D507FE99A26DF88099407975011D /* Pods-PagedAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PagedAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F20AFC659EA5FCDACD884BD564DCF83F /* PagedAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagedAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37944324DECBF93F64AF830ED22DB03 /* Pods-PagedAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PagedAlertController_Example-dummy.m"; sourceTree = "<group>"; };
+		F42A8305222BD4FA3C14BD0DECBA967B /* Pods-PagedAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PagedAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F6E9C7AAEBAF215EEB8CC27E5725DBEC /* Pods_PagedAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagedAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA283FB9C1BC7CACD7974422DE26D79D /* Pods-PagedAlertController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PagedAlertController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76831E1B92A9845F5CF274636733ACE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FF2744ECB1E4E4D1BB2FE682755F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C9BB4B32E641A9E12C7554A8AEF98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C820CDE099E22AFFF5E0A8ED0CC51E56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB37640DD5F72465C24EC85FE4ACFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C00C688A2D8056F4D428019C9264676 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06ACF2EF276F8F89AF43BF8CA160435E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6386EB2B608C19FAB839B960FE15C819 /* Info.plist */,
+				C14F39055378E4BF1F6DAAF24CC789D9 /* PagedAlertController.modulemap */,
+				38E16558EDD1B8FCC0560C0DA6D67A07 /* PagedAlertController.xcconfig */,
+				8AF7015915A2A8A746827CA980B3EEE0 /* PagedAlertController-dummy.m */,
+				2326D44BCF7521E62FD85146EDDADC6A /* PagedAlertController-prefix.pch */,
+				896D228DFD9C5C8554875DBEEF2DB60A /* PagedAlertController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PagedAlertController";
+			sourceTree = "<group>";
+		};
+		0D11BEC95E6952EC5944F1F214BAF44D /* Pods-PagedAlertController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				563C2F6DF8F577F1677C0D0F93DACD54 /* Info.plist */,
+				60BFCD8766096CF4DE2ED93B5CD89600 /* Pods-PagedAlertController_Tests.modulemap */,
+				726B93A30372951BA85D396C085A2BAC /* Pods-PagedAlertController_Tests-acknowledgements.markdown */,
+				FA283FB9C1BC7CACD7974422DE26D79D /* Pods-PagedAlertController_Tests-acknowledgements.plist */,
+				1A96C36BA811205A6B21536C95C3A9E0 /* Pods-PagedAlertController_Tests-dummy.m */,
+				666E2A742BA810E56EF25BBA76240CDA /* Pods-PagedAlertController_Tests-frameworks.sh */,
+				64D80ABDB2958F5C48894B9B53D51C4D /* Pods-PagedAlertController_Tests-resources.sh */,
+				9871EBC2407EF074A4A521E5C6897BBE /* Pods-PagedAlertController_Tests-umbrella.h */,
+				B3105D68EE22FE430830B9B171D1F8B6 /* Pods-PagedAlertController_Tests.debug.xcconfig */,
+				1C16610173BA77872D220FA5B5137A47 /* Pods-PagedAlertController_Tests.release.xcconfig */,
+			);
+			name = "Pods-PagedAlertController_Tests";
+			path = "Target Support Files/Pods-PagedAlertController_Tests";
+			sourceTree = "<group>";
+		};
+		2462C57CFA6998478CBE6D09B5BE0B07 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDC2A0C00B27B961CE0BAF2B2489C869 /* PagedAlertController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3B335FEC9737169338AC6ABBDE53AC7A /* Pods-PagedAlertController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9775B86227C08CFACDED8616281BFA91 /* Info.plist */,
+				934B9F1769148438B2B4C49C0BD07C0F /* Pods-PagedAlertController_Example.modulemap */,
+				E9E4D507FE99A26DF88099407975011D /* Pods-PagedAlertController_Example-acknowledgements.markdown */,
+				BAE50D0308240602F9FA343DB1FDE00D /* Pods-PagedAlertController_Example-acknowledgements.plist */,
+				F37944324DECBF93F64AF830ED22DB03 /* Pods-PagedAlertController_Example-dummy.m */,
+				F42A8305222BD4FA3C14BD0DECBA967B /* Pods-PagedAlertController_Example-frameworks.sh */,
+				C37BEBB0296D7A5E1C252A18836753B6 /* Pods-PagedAlertController_Example-resources.sh */,
+				42740287D057F400E67947A9F6EB5489 /* Pods-PagedAlertController_Example-umbrella.h */,
+				97D4220D8C5464A764DD12F0B4D9CFB6 /* Pods-PagedAlertController_Example.debug.xcconfig */,
+				39EFDF8D7EB7B39120B97FA77E705B93 /* Pods-PagedAlertController_Example.release.xcconfig */,
+			);
+			name = "Pods-PagedAlertController_Example";
+			path = "Target Support Files/Pods-PagedAlertController_Example";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4C98CB06DFCE2D723EC1A81EF6DC2FFE /* PagedAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				A5895E412B698763B104F2C18E7044D7 /* Classes */,
+			);
+			path = PagedAlertController;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				2462C57CFA6998478CBE6D09B5BE0B07 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B2CA70E1450015BAD2167257F14EFC85 /* Products */,
+				C0474E7BCCF6B6AE883CA9D710834145 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A5895E412B698763B104F2C18E7044D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B16C9DD6B0F22D8B83F9538EEDE8429F /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B2CA70E1450015BAD2167257F14EFC85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F20AFC659EA5FCDACD884BD564DCF83F /* PagedAlertController.framework */,
+				884B4F068D34F5635D7E6692ADFE61E1 /* Pods_PagedAlertController_Example.framework */,
+				F6E9C7AAEBAF215EEB8CC27E5725DBEC /* Pods_PagedAlertController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0474E7BCCF6B6AE883CA9D710834145 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B335FEC9737169338AC6ABBDE53AC7A /* Pods-PagedAlertController_Example */,
+				0D11BEC95E6952EC5944F1F214BAF44D /* Pods-PagedAlertController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CDC2A0C00B27B961CE0BAF2B2489C869 /* PagedAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				4C98CB06DFCE2D723EC1A81EF6DC2FFE /* PagedAlertController */,
+				06ACF2EF276F8F89AF43BF8CA160435E /* Support Files */,
+			);
+			name = PagedAlertController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08B8720052BB2795D53B3A0C1B873CF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46AFC8D99453684DBC57B7C8B162B79 /* PagedAlertController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2260250459A3EFC1EFE15BCEB6388CDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AD0713178FB2841A08400C1C5BA0D9 /* Pods-PagedAlertController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9CBE9391F50E80070464FAD33E7E668 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E845284D9685FEB2B26726752797C90 /* Pods-PagedAlertController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B4B4463BD5E7FA0C1B47B74BC7E0480 /* Pods-PagedAlertController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653E30E0C2E8C85908E314D4EDD20BE0 /* Build configuration list for PBXNativeTarget "Pods-PagedAlertController_Example" */;
+			buildPhases = (
+				A3391EAF208C5B65FA3453F4C779B944 /* Sources */,
+				9FB37640DD5F72465C24EC85FE4ACFBC /* Frameworks */,
+				F9CBE9391F50E80070464FAD33E7E668 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ABE59FB9AFB10D668CD08B2E5C89219 /* PBXTargetDependency */,
+			);
+			name = "Pods-PagedAlertController_Example";
+			productName = "Pods-PagedAlertController_Example";
+			productReference = 884B4F068D34F5635D7E6692ADFE61E1 /* Pods_PagedAlertController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4FCA3AF9B23FD81CE5699AE366479C48 /* Pods-PagedAlertController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2ECA7CF606883A60CD8FF3EAB213BB6 /* Build configuration list for PBXNativeTarget "Pods-PagedAlertController_Tests" */;
+			buildPhases = (
+				539F7A4385C602C18CC74EEF6B77D23D /* Sources */,
+				76831E1B92A9845F5CF274636733ACE7 /* Frameworks */,
+				2260250459A3EFC1EFE15BCEB6388CDB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PagedAlertController_Tests";
+			productName = "Pods-PagedAlertController_Tests";
+			productReference = F6E9C7AAEBAF215EEB8CC27E5725DBEC /* Pods_PagedAlertController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A790BEA41BF313B3623D78A71A9104CE /* PagedAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 914F9EC80B1ED162DF845B5CE88E6997 /* Build configuration list for PBXNativeTarget "PagedAlertController" */;
+			buildPhases = (
+				25E0A2F61B3AF60CB50812B4EB6FC6D0 /* Sources */,
+				919C9BB4B32E641A9E12C7554A8AEF98 /* Frameworks */,
+				08B8720052BB2795D53B3A0C1B873CF6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagedAlertController;
+			productName = PagedAlertController;
+			productReference = F20AFC659EA5FCDACD884BD564DCF83F /* PagedAlertController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B2CA70E1450015BAD2167257F14EFC85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A790BEA41BF313B3623D78A71A9104CE /* PagedAlertController */,
+				0B4B4463BD5E7FA0C1B47B74BC7E0480 /* Pods-PagedAlertController_Example */,
+				4FCA3AF9B23FD81CE5699AE366479C48 /* Pods-PagedAlertController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25E0A2F61B3AF60CB50812B4EB6FC6D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66CCC23E09E4ABD5AE7BC977BC679CF /* PagedAlertController-dummy.m in Sources */,
+				94A6E37A1E8CE9A03702964FB3672D3E /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539F7A4385C602C18CC74EEF6B77D23D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7A95095B4483F0BA7761825DACA4B3 /* Pods-PagedAlertController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3391EAF208C5B65FA3453F4C779B944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6833083665E6A892F3AD6ADC04DA816 /* Pods-PagedAlertController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9ABE59FB9AFB10D668CD08B2E5C89219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PagedAlertController;
+			target = A790BEA41BF313B3623D78A71A9104CE /* PagedAlertController */;
+			targetProxy = 90665261828231B604327D073DD80DA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6384CA29DC224C5026C291F7DB3CC6A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E16558EDD1B8FCC0560C0DA6D67A07 /* PagedAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PagedAlertController/PagedAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagedAlertController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagedAlertController/PagedAlertController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PagedAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B118478AEB863D6AF8891F67914104B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D4220D8C5464A764DD12F0B4D9CFB6 /* Pods-PagedAlertController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PagedAlertController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PagedAlertController_Example/Pods-PagedAlertController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PagedAlertController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D437DEC76271046C77629B5D56D8E579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E16558EDD1B8FCC0560C0DA6D67A07 /* PagedAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PagedAlertController/PagedAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagedAlertController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagedAlertController/PagedAlertController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PagedAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E525917EF5EFC684A9BD74F33208C8C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C16610173BA77872D220FA5B5137A47 /* Pods-PagedAlertController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PagedAlertController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PagedAlertController_Tests/Pods-PagedAlertController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PagedAlertController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F71E01BB3460290F1CAC4959FB4DF901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39EFDF8D7EB7B39120B97FA77E705B93 /* Pods-PagedAlertController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PagedAlertController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PagedAlertController_Example/Pods-PagedAlertController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PagedAlertController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F815919037F9DB7A966206B8EB98CA9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3105D68EE22FE430830B9B171D1F8B6 /* Pods-PagedAlertController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PagedAlertController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PagedAlertController_Tests/Pods-PagedAlertController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PagedAlertController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653E30E0C2E8C85908E314D4EDD20BE0 /* Build configuration list for PBXNativeTarget "Pods-PagedAlertController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B118478AEB863D6AF8891F67914104B /* Debug */,
+				F71E01BB3460290F1CAC4959FB4DF901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		914F9EC80B1ED162DF845B5CE88E6997 /* Build configuration list for PBXNativeTarget "PagedAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D437DEC76271046C77629B5D56D8E579 /* Debug */,
+				6384CA29DC224C5026C291F7DB3CC6A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2ECA7CF606883A60CD8FF3EAB213BB6 /* Build configuration list for PBXNativeTarget "Pods-PagedAlertController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F815919037F9DB7A966206B8EB98CA9A /* Debug */,
+				E525917EF5EFC684A9BD74F33208C8C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
