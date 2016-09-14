@@ -28,7 +28,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PagedAlertController/Classes/**/*'
-  s.resources = ["images/*.png", "classes/PagedAlertView.xib"]
+  #s.resources = 'PagedAlertController/Classes/**/*'
+  s.resources = ["PagedAlertController/Classes/PagedAlertView.xib"]
   
   # s.resource_bundles = {
   #   'PagedAlertController' => ['PagedAlertController/Assets/*.png']
