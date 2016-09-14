@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PagedAlertController'
-  s.version          = '0.1.3'
-  s.summary          = 'An alert like paged controller'
+  s.version          = '0.1.4'
+  s.summary          = 'An alert like paged controller with custom content'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,9 +31,9 @@ Pod::Spec.new do |s|
   #s.resources = 'PagedAlertController/Classes/**/*'
   s.resources = ["PagedAlertController/Classes/PagedAlertView.xib"]
   
-  # s.resource_bundles = {
-  #   'PagedAlertController' => ['PagedAlertController/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'PagedAlertController' => ['PagedAlertController/Classes/*.xib']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
