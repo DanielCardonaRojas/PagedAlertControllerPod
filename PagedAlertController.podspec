@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PagedAlertController'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'An alert like paged controller with custom content'
 
 # This description is used to generate tags and improve search results.
@@ -27,12 +27,11 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'PagedAlertController/Classes/**/*'
-  #s.resources = 'PagedAlertController/Classes/**/*'
-  s.resources = ["PagedAlertController/Classes/PagedAlertView.xib"]
+  s.source_files = 'PagedAlertController/Classes/**/*.{h,m}'
+  #s.resources = ["PagedAlertController/Classes/PagedAlertView.xib"]
   
    s.resource_bundles = {
-     'PagedAlertController' => ['PagedAlertController/Classes/*.xib']
+     'PagedAlertController' => ['PagedAlertController/Classes/PagedAlertView.xib'],
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

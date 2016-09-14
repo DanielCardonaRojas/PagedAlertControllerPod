@@ -50,17 +50,12 @@
     [self.nextButton.titleLabel setFont:[UIFont systemFontOfSize:15.f]];
     [self.previousButton.titleLabel setFont:[UIFont systemFontOfSize:15.f]];
     
-    //TODO: Set Constraints
+    //TODO: Set Constraints, set borders with CALayers, crop button corners
     
     [self.nextButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 15.f)];
     [self.previousButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 15.f)];
     
     
-//    CALayer *upperBorder = [CALayer layer];
-//    upperBorder.backgroundColor = [[UIColor greenColor] CGColor];
-    
-//    upperBorder.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), 1.0f);
-//    [self.innerContentView.layer addSublayer:upperBorder];
     
     
     [self.innerContentView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
@@ -82,6 +77,20 @@
     
 }
 -(UIView*)loadFromNib{
+    
+//    NSBundle* podBunble = [NSBundle bundleForClass:[self classForCoder]];
+//    NSURL* bundleURL = [podBunble URLForResource:@"PodBundle" withExtension:@"bundle"];
+//    
+//    if (podBunble) {
+//        NSBundle* bundle = [NSBundle bundleWithURL:bundleURL];
+//        if (bundle) {
+//            UINib* nib = [UINib nibWithNibName:@"PagedAlertView" bundle:bundle];
+//            UIView* pagedAlertView = [[nib instantiateWithOwner:self options:nil] firstObject];
+//            
+//            return pagedAlertView;
+//        }
+//    }
+    
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
     UINib* nib = [UINib nibWithNibName:@"PagedAlertView" bundle:bundle];
     UIView* view = [[nib instantiateWithOwner:self options:nil] firstObject];

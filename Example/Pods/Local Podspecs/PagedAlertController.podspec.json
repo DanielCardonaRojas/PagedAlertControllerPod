@@ -1,7 +1,7 @@
 {
   "name": "PagedAlertController",
-  "version": "0.1.1",
-  "summary": "An alert like paged controller",
+  "version": "0.1.4",
+  "summary": "An alert like paged controller with custom content",
   "description": "Provides an Alert style embeded in a UIPageViewController with a data source and delegate protocol for configuration and response.",
   "homepage": "https://github.com/DanielCardonaRojas/PagedAlertControllerPod",
   "license": {
@@ -13,10 +13,21 @@
   },
   "source": {
     "git": "https://github.com/DanielCardonaRojas/PagedAlertControllerPod.git",
-    "tag": "0.1.1"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PagedAlertController/Classes/**/*"
+  "source_files": "PagedAlertController/Classes/**/*",
+  "resources": [
+    "PagedAlertController/Classes/PagedAlertView.xib"
+  ],
+  "resource_bundles": {
+    "PagedAlertController": [
+      "PagedAlertController/Classes/PagedAlertView.xib"
+    ],
+    "PodBundle": [
+      "Pod/**/*.xib"
+    ]
+  }
 }

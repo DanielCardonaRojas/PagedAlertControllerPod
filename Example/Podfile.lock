@@ -1,5 +1,5 @@
 PODS:
-  - PagedAlertController (0.1.1)
+  - PagedAlertController (0.1.4)
 
 DEPENDENCIES:
   - PagedAlertController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PagedAlertController: d58833e2411b7b7c0fb9ba6e93eff8497b0ec1b4
+  PagedAlertController: e93b9ddb1be091a2150a49a23fd1368b94c04ca8
 
 PODFILE CHECKSUM: 34660ee75757e110af3dc6c72e074235ba53bcf0
 
