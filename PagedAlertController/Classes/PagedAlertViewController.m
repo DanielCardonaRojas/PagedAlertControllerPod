@@ -484,7 +484,7 @@
     NSLog(@"tapp recognizer");
     if (sender.state == UIGestureRecognizerStateEnded)
     {
-        CGPoint location = [sender locationInView:nil]; //Passing nil gives us coordinates in the window
+//        CGPoint location = [sender locationInView:nil]; //Passing nil gives us coordinates in the window
 //        NSLog(@"tap in location: %f %f",location.x, location.y);
         
         //Convert tap location into the local view's coordinate system. If outside, dismiss the view.
