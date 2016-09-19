@@ -18,6 +18,7 @@
 @property (strong,nonatomic) UIView* currentPageContentView;
 
 @property (nonatomic) NSInteger index;
+@property (nonatomic) NSInteger numberOfPages;
 @property (strong,nonatomic) UITapGestureRecognizer* tapRecognizer;
 
 
@@ -66,20 +67,17 @@
 - (UIViewController *)contentPageControllerAtIndex:(NSInteger)index{
     
     NSUInteger pageCount = [self numberOfPagesForPageViewController];
-    BOOL usesWrapping = NO;
-    if([self.delegate respondsToSelector:@selector(usesWrappAroundIndexing)]){
-        usesWrapping = [self.dataSource usesWrappAroundIndexing];
-    }
+    
     
     if (pageCount == 0) {
         return nil;
     }
     
-    if (!usesWrapping && (index < 0 || index >= pageCount)) {
+    if (!self.usesWrappAroundIndexing && (index < 0 || index >= pageCount)) {
         return nil;
     }
     
-    if (usesWrapping) {
+    if (self.usesWrappAroundIndexing) {
         NSUInteger numPages = [self numberOfPagesForPageViewController];
         index = index < 0 ? index + numPages : index;
         index %= numPages;
@@ -107,8 +105,6 @@
     CGRect alertFrame = CGRectMake(width/2, 130, 300, 300);
     
     PagedAlertView* alertView = [[PagedAlertView alloc]initWithFrame:alertFrame];
-//    PagedAlertView* alertView = [[PagedAlertView alloc] init];
-//    [alertView setFrame:alertFrame];
     alertView.center = self.view.center;
     
     
@@ -141,7 +137,7 @@
         NSArray* buttonTitles = [self.dataSource pagedAlertControllerButtonTitles];
         NSUInteger numberOfTitles = [buttonTitles count];
         
-        NSUInteger previousTitleIndex = numberOfTitles >= self.pageControl.numberOfPages ? index * 2 : numberOfTitles - 1;
+        NSUInteger previousTitleIndex = numberOfTitles >= self.numberOfPages ? index * 2 : numberOfTitles - 1;
         previousTitleIndex %= numberOfTitles;
         NSUInteger nextTitleIndex = (previousTitleIndex + 1) % (numberOfTitles);
         
@@ -174,6 +170,10 @@
         }
         
     }
+    
+    [alertView.closeButton setImage:self.closeImage forState:UIControlStateNormal];
+    [alertView.closeButton setTintColor:[UIColor blackColor]];
+    
     
     
     //SHOULD SWAP BUTTON LAYOUT (IMAGE, TEXT)
@@ -242,13 +242,13 @@
     
     
     //Default to self TODO: Check this works and doesnt affect real delegate controller
-    if([self.dataSource respondsToSelector:@selector(allowsSwipe)]){
-        if (![self.dataSource allowsSwipe]) {
-            [self.pageViewController setDataSource:nil];
-        }else{
-            [self.pageViewController setDataSource:self];
-        }
+    
+    if (![self allowsSwipe]) {
+        [self.pageViewController setDataSource:nil];
+    }else{
+        [self.pageViewController setDataSource:self];
     }
+    
 //    [self.pageViewController setDataSource:self];
     [self.pageViewController setDelegate:self];
     
@@ -261,17 +261,17 @@
     
     
     // Add a Page Control Indicator
-    if([self.dataSource respondsToSelector:@selector(showsPageBullets)]){
-        if ([self.dataSource showsPageBullets]) {
+    if ([self showsPageBullets]) {
             [self.pageControl setNumberOfPages:[self numberOfPagesForPageViewController]];
             [self.pageControl setBackgroundColor:self.pageControlBackgroundColor];
             [self.pageControl setCurrentPageIndicatorTintColor:self.bulletColor];
             [self.view addSubview:self.pageControl];
             [self.pageControl setHidden:NO];
-            
-        }
         
-    }else {
+        
+        
+        }
+    else {
         [self.pageControl setHidden:YES];
     }
     [self.pageControl setCurrentPage:self.index];
@@ -290,27 +290,33 @@
 
 #pragma mark - PageController Actions 
 -(void)moveToNextPage{
+    [self flipPageWithDirection: PagedAlertFlipDirectionForward];
+    
+}
+
+-(void)moveToPreviousPage{
+    [self flipPageWithDirection: PagedAlertFlipDirectionBackward];
+}
+
+-(void)flipPageWithDirection:(PagedAlertFlipDirection)direction{
+    
     // Moving from last page?
+    NSInteger inc = direction == PagedAlertFlipDirectionForward ? 1 : -1;
+    UIViewController* nextPage = [self contentPageControllerAtIndex:self.index + inc];
     
-    UIViewController* nextPage = [self contentPageControllerAtIndex:self.index + 1];
+    UIPageViewControllerNavigationDirection nav = direction == PagedAlertFlipDirectionForward  ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse;
     
+    if (!nextPage) {
+        [self stopPagedAlert];
+        return;
+    }
     
     //Notify delegate movement to next page
     if([self.delegate respondsToSelector:@selector(pagedAlert:didTurnToPageAtIndex:)]){
         [self.delegate pagedAlert:self.currentPageContentView didTurnToPageAtIndex:self.index];
     }
-    [self.pageViewController setViewControllers:@[nextPage] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    [self.pageViewController setViewControllers:@[nextPage] direction:nav animated:YES completion:nil];
     
-}
-
--(void)moveToPreviousPage{
-    UIViewController* prevPage = [self contentPageControllerAtIndex:self.index - 1];
-    //Notify delegate movement to previous page
-    if([self.delegate respondsToSelector:@selector(pagedAlert:didTurnToPageAtIndex:)]){
-        [self.delegate pagedAlert:self.currentPageContentView didTurnToPageAtIndex:self.index];
-    }
-    
-    [self.pageViewController setViewControllers:@[prevPage] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
 }
 
 -(void)moveToPageAtIndex:(NSUInteger)idx{
@@ -326,7 +332,7 @@
 #pragma mark - Lazy Instantiation. If no pageControl is hooked up then create a default one
 -(UIPageControl *)pageControl{
     if (!_pageControl) {
-        CGRect frame = CGRectMake(self.view.frame.size.width*0.25, self.view.frame.size.height*0.7, self.view.frame.size.width*0.5, self.view.frame.size.height*0.05);
+        CGRect frame = CGRectMake(self.currentPageContentView.frame.size.width*0.25, self.currentPageContentView.frame.size.height + self.view.center.y * 0.8, self.view.frame.size.width*0.5, self.view.frame.size.height*0.05);
         
         _pageControl = [[UIPageControl alloc]initWithFrame:frame];        
         [_pageControl setCurrentPage:0];
@@ -355,13 +361,6 @@
     }
     return _bulletColor;
 }
-
-//-(UIColor*)titleColor{
-//    if(!_titleColor){
-//        _titleColor = [UIColor blackColor];
-//    }
-//    return _titleColor;
-//}
 
 
 
@@ -415,7 +414,9 @@
 
 
 -(NSUInteger)numberOfPagesForPageViewController{
-    return [self.dataSource numberOfPagesForPagedAlertController:self];
+    NSUInteger count = [self.dataSource numberOfPagesForPagedAlertController:self];
+    self.numberOfPages = count;
+    return count;
 }
 
 
@@ -431,31 +432,14 @@
 -(IBAction)tappedNextButton:(id)sender{
     
     //if in last page and no wrap around indexing dismiss
-    if (self.index == self.pageControl.numberOfPages - 1 && !self.usesWrappAroundIndexing) {
+    if (self.index == self.numberOfPages - 1 && !self.usesWrappAroundIndexing) {
         [self stopPagedAlert];
         return;
        
     }
     
-    if([self.delegate respondsToSelector:@selector(pagedAlert:shouldFlipToNextPageFromPage:)]){
-        
-        BOOL shouldFlipPage = [self.delegate pagedAlert:self.currentPageContentView
-                           shouldFlipToNextPageFromPage:self.index];
-        
-        if(shouldFlipPage){
-            
-            [self moveToNextPage];
-            
-        }else{
-            //Shouldnt advance or rewind page so give a change to update view (maybe show validation or so)
-            if([self.dataSource respondsToSelector:@selector(updateViewOnPageFlipForwardRejection:pageIndex:)]){
-                UIView* updatedView = [self.dataSource updateViewOnPageFlipForwardRejection:self.currentPageContentView pageIndex:self.index];
-                
-                //set this updatedview
-                [self setCurrentPageContentView:updatedView];
-            }
-        }
-    }
+    [self rejectPageFlip:self.index direction:PagedAlertFlipDirectionForward];
+    
     
 }
 
@@ -467,13 +451,8 @@
         return;
     }
         
-    if([self.delegate respondsToSelector:@selector(pagedAlert:shouldFlipToPreviousPageFromPage:)]){
-        
-        BOOL shouldFlipPage = [self.delegate pagedAlert:nil shouldFlipToPreviousPageFromPage:self.index];
-        if(shouldFlipPage){
-            [self moveToPreviousPage];
-        }
-    }
+    [self rejectPageFlip:self.index direction:PagedAlertFlipDirectionBackward];
+    
     
 }
 
@@ -507,6 +486,39 @@
     button.imageView.transform = CGAffineTransformMakeScale(-1.0, 1.0);
     
     return button;
+}
+#pragma mark - Utilities
+-(void)rejectPageFlip:(NSUInteger)index direction:(PagedAlertFlipDirection)direction{
+    if([self.delegate respondsToSelector:@selector(pagedAlert:rejectsPageFlip:direction:)]){
+        
+        BOOL rejectsPageFlip = [self.delegate pagedAlert:self.currentPageContentView rejectsPageFlip:self.index direction:direction];
+        
+        //Shouldnt advance or rewind page so give a change to update view (maybe show validation or so)
+        if(rejectsPageFlip && [self.dataSource respondsToSelector:@selector(updateViewOnPageFlipRejection:pageIndex:direction:)]){
+            UIView* updatedView = [self.dataSource updateViewOnPageFlipRejection:self.currentPageContentView pageIndex:index direction:direction];
+            
+            //set this updatedview
+            [self setCurrentPageContentView:updatedView];
+            return;
+        }else{
+            [self flipPageWithDirection:direction];
+        }
+        
+    }
+    
+    
+    
+}
+
+
+
+-(id)object:(id) obj performProtocolMethod:(SEL)sel{
+    if ([obj respondsToSelector: sel]) {
+        id res = [obj performSelector:sel];
+        return res;
+    }
+    
+    return nil;
 }
 
 /*=================== DEFAULT/EXAMPLE IMPLEMENTATION DATASOURCE AND DELEGATE ============================= */
@@ -556,17 +568,7 @@
     
     return title;
 }
--(BOOL)showsPageBullets{
-    return YES;
-}
 
--(BOOL)usesWrappAroundIndexing{
-    return NO;
-}
-
--(BOOL)allowsSwipe{
-    return NO;
-}
 
 
 #pragma mark - PagedAlertDelegate
@@ -579,14 +581,11 @@
     
 }
 
--(BOOL)pagedAlert:(UIView *)view shouldFlipToPreviousPageFromPage:(NSUInteger)integer submissionInfo:(NSDictionary *)info{
-    return YES;
+-(BOOL)pagedAlert:(UIView*)view rejectsPageFlip:(NSUInteger)index direction:(PagedAlertFlipDirection) direction{
+    return NO;
 }
 
--(BOOL)pagedAlert:(UIView *)view shouldFlipToNextPageFromPage:(NSUInteger)integer submissionInfo:(NSDictionary *)info{
-    
-    return YES;
-}
+
 
 -(void)willDismissPagedAlertController{
     

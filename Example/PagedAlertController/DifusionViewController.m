@@ -34,6 +34,8 @@
     
     [pagedAlert setDelegate:self];
     [pagedAlert setDataSource:self];
+    pagedAlert.showsPageBullets = YES;
+    [pagedAlert setCloseImage: [UIImage imageNamed:@"close_button.png"]];
     
     self.pagedAlert = pagedAlert;
 }
@@ -76,7 +78,7 @@
 
 }
 
--(UIView *)updateViewOnPageFlipForwardRejection:(UIView *)view pageIndex:(NSUInteger)index{
+-(UIView *)updateViewOnPageFlipRejection:(UIView *)view pageIndex:(NSUInteger)index directon:(PagedAlertFlipDirection)direction{
     
     for (UIView *i in view.subviews){
         if([i isKindOfClass:[UILabel class]]){
@@ -128,8 +130,8 @@
     
     UIImage* likeIcon = [UIImage imageNamed:@"like.png"];
     UIImage* dislikeIcon = [UIImage imageNamed:@"dislike.png"];
-    UIImage* nextArrow = [UIImage imageNamed:@"right-arrow.png"];
-    UIImage* previousArrow = [UIImage imageNamed:@"left-arrow.png"];
+//    UIImage* nextArrow = [UIImage imageNamed:@"right-arrow.png"];
+//    UIImage* previousArrow = [UIImage imageNamed:@"left-arrow.png"];
     
     
     //Resize programmatically
@@ -153,20 +155,6 @@
     
     return array;
 }
--(BOOL)showsPageBullets{
-    return YES;
-}
-
--(BOOL)usesWrappAroundIndexing{
-    return NO;
-}
-
--(BOOL)allowsSwipe{
-    return NO;
-}
-
-
-
 
 #pragma mark - PagedAlertDelegate
 
@@ -174,17 +162,10 @@
     
 }
 
--(BOOL)pagedAlert:(UIView *)view shouldFlipToPreviousPageFromPage:(NSUInteger)integer{
-    
-    NSLog(@"tapped prev button alertview test controller delegate",nil);
-    return YES;
+-(BOOL)pagedAlert:(UIView*)view rejectsPageFlip:(NSUInteger)index direction:(PagedAlertFlipDirection) direction{
+    return NO;
 }
 
--(BOOL)pagedAlert:(UIView *)view shouldFlipToNextPageFromPage:(NSUInteger)integer{
-    NSLog(@"tapped next button alertview teste controller delegate",nil);
-    
-    return YES;
-}
 
 -(void)pagedAlert:(UIView *)view didTurnToPageAtIndex:(NSUInteger)pageIndex{
     //

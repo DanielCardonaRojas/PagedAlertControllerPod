@@ -34,14 +34,21 @@
 
 //TODO: Subclass UIViewController and change respective protocol method parameters
 
+/** Page flip directions */
+typedef enum
+{
+    PagedAlertFlipDirectionBackward = -1,
+    PagedAlertFlipDirectionForward = 1
+}PagedAlertFlipDirection;
+
 /* -------------------------- DELEGATE ------------------------- */
 @protocol PagedAlertDelegate <NSObject>
 
 @optional
 -(void)pagedAlert: (UIView*)view didTurnToPageAtIndex:(NSUInteger)pageIndex;
 -(void)willStartPagedAlertController:(UIViewController*) pagedController;
--(BOOL)pagedAlert:(UIView*)view shouldFlipToNextPageFromPage:(NSUInteger)integer;
--(BOOL)pagedAlert: (UIView*)view shouldFlipToPreviousPageFromPage:(NSUInteger)integer;
+
+-(BOOL)pagedAlert:(UIView*)view rejectsPageFlip:(NSUInteger)index direction:(PagedAlertFlipDirection) direction;
 
 
 //TODO: especify page index where this happens
@@ -61,23 +68,12 @@
 
 //TODO: generalize so the PagedAertView can have a varying size viewForAlertPage:(NSInteger)index contentDimension:(CGRect) frame;
 - (UIView *)viewForAlertPage:(NSUInteger)index;
-
 -(NSString*)titleForPageAtIndex:(NSUInteger)index;
 
 
--(BOOL)allowsSwipe;
-
-
 @optional
-//Change these to properties?
-
-// Not usigin wrap around indexing means the PagedViewController will be dismissed if tapping the previous button on first page
-//or the next button on final page.
--(BOOL)usesWrappAroundIndexing;
--(BOOL)showsPageBullets;
 //Used to validate input
--(UIView*)updateViewOnPageFlipForwardRejection:(UIView*)view pageIndex:(NSUInteger)index;
--(UIView*)updateViewOnPageFlipBackwardRejection:(UIView*)view pageIndex:(NSUInteger)index;
+-(UIView*)updateViewOnPageFlipRejection:(UIView*)view pageIndex:(NSUInteger)index direction:(PagedAlertFlipDirection)direction;
 -(UIColor*)titleColorForPageAtIndex:(NSUInteger)index;
 //An array of strings indicating the button titles for each page (should have equal length to number of pages)
 -(NSArray*)pagedAlertControllerButtonTitles;
@@ -97,6 +93,12 @@
 @property (strong,nonatomic) UIColor* bulletColor;
 @property (strong,nonatomic) UIColor* pageControlBackgroundColor;
 @property (strong,nonatomic) UIPageControl* pageControl;
+
+@property (nonatomic) BOOL showsPageBullets;
+@property (nonatomic) BOOL allowsSwipe;
+@property (nonatomic) BOOL usesWrappAroundIndexing;
+
+@property (weak,nonatomic) UIImage* closeImage;
 
 
 @property (weak,nonatomic) id<PagedAlertDelegate> delegate;
