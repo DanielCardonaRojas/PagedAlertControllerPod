@@ -506,19 +506,6 @@
         
     }
     
-    
-    
-}
-
-
-
--(id)object:(id) obj performProtocolMethod:(SEL)sel{
-    if ([obj respondsToSelector: sel]) {
-        id res = [obj performSelector:sel];
-        return res;
-    }
-    
-    return nil;
 }
 
 /*=================== DEFAULT/EXAMPLE IMPLEMENTATION DATASOURCE AND DELEGATE ============================= */
